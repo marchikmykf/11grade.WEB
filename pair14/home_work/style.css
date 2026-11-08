@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Kristen ITC", serif;
+    background: #aaaaaa;
+    color: #202020;
+}
+.container{
+    width: min(450px, 90vh);
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(191 163 252);
+}
+label{
+    display: block;
+    margin: 15px 0;
+    color: #000000;
+}
+input, select{
+    border: 1px solid #888787;
+    border-radius: 5px;
+    padding: 10px;
+}
+.hello{
+    display: block;
+    margin: 15px 0;
+    color: #6924ff;
+}
+
+button{
+    border: none;
+    margin: 15px 0;
+    background: #9b6eb3;
+    color: #e3e3e3;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.mainBtn{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+.success{
+    display: block;
+    color: #147d43;
+}
+.white{
+    background: #fff;
+    color: #000000;
+}
+.blue{
+    background: #8ebce8;
+    color: #fdfdfd;
+}
+.green{
+    background: #a9eab1;
+    color: #fff;
+}
+.yellow{
+    background: #ffc600;
+    color: #fff;
+}

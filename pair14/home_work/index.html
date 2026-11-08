@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container" id="container">
+  <h1>Налаштування профілю</h1>
+  <p id ="welcome" class = "hello">Вітаємо, гостю!</p>
+
+  <label for="studentsName">Ваше імʼя</label>
+  <input id="studentsName" type="text" placeholder="Введіть імʼя">
+
+  <label for="tema">Тема</label>
+  <select id="tema">
+      <option value="white">Default</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+  </select>
+  <p class ="hidden" id = "status">Дії підтверджено</p>
+
+  <button id="acceptBtn" class ="mainBtn">Підтвердити</button>
+  <button id="detailsBtn" class ="secondaryBtn">Показати опис</button>
+  <p class ="hidden" id="details">В мене на думці лише скарги на екстремальний холод в ЛИСТОПАДІ</p>
+
+</main>
+<script src="script.js" defer></script>
+</body>
+</html>
