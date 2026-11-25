@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+    <h1>Create an account</h1>
+    <p class = "subtitle">Join us, gordist' rayony!</p>
+    <form id = "register-form">
+        <div class = "field">
+            <label>First name</label>
+            <input type = "text" autocomplete = "username" id = "firstname" placeholder="For instance, John" required>
+            <small id = "username-error" class="error"></small>
+        </div>
+        <div class = "field">
+            <label>Email</label>
+            <input type = "email" autocomplete = "email" id = "email" placeholder="abs@example.com" required>
+            <small id = "email-error" class="error"></small>
+        </div>
+        <div class = "field">
+            <label>Password</label>
+            <div class = "password-row">
+            <input type = "password" autocomplete = "password" id = "password" placeholder="Min 8" required>
+                <button id = "toggle-password" type = "button">˘</button>
+            </div>
+            <small id = "password-error" class="error"></small>
+            <div class = "strength-track"><div id = "strength-bar"></div></div>
+            <small id = "strength-track">Надійність пароля</small>
+        </div>
+        <div class = "field">
+            <label>Write again</label>
+            <input type = "password" id = "confirm-password" placeholder="Write again" required>
+            <small id = "confirm-error" class="error"></small>
+        </div>
+        <div class = "field">
+            <label class = "terms"><imput id="terms" type = "checkbox">Agree</label>
+            <small id = "terms-error" class="error"></small>
+        </div>
+        <button type = "submit" class = "submit" id = "register-submit">Register</button>
+        <p id ="result"></p>
+    </form>
+</main>
+</body>
+</html>
