@@ -2,9 +2,119 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 body{
     margin: 0;
     min-height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #fb4c4c 0%, #000 100%);
+    color: white;
+}
+.card{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #838383;
+    background-color: #531212;
+    box-shadow: 0 20px 60px #838383;
+}
+h1{
+    margin: 12px 0 6px;
+    font-size: 36px;
+}
+.subtitle{
+    color: #d5d5d5;
+    margin: 0 0 35px;
+}
+.field{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+input:not([type = 'checkbox']){
+    width: 100%;
+    border: 1px solid #802424;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+input:focus-visible, button:focus-visible{
+    outline: 2px solid #fb4c4c;
+}
+
+.error{
+    display: block;
+    margin-top:5px;
+    min-height: 15px;
+    color: red;
+    font-size: 12px;
+}
+
+.password-row{
+    position: relative;
+}
+.password-row input{
+    padding-right: 50px;
+}
+.toggle{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #420000;
+    cursor: pointer;
+}
+.strength-track{
+    height: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0 5px;
+    background-color: #c38585;
+}
+#strength-bar{
+    height: 100%;
+    width: 0;
+    transition: width .2s;
+}
+#strength-text{
+    color: white;
+    font-size: 12px;
+}
+.terms{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.submit{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #420000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: #fb4c4c;
+}
+#result{
+    width: 100%;
+    color: #ffbcbc;
+    font-size: 15px;
+    margin: 15px 0 0;
+}
+#result:empty{
+    display: none;
 }
